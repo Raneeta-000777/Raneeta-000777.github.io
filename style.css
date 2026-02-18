@@ -12,10 +12,15 @@ body {
     max-width: 780px;
     margin: 60px auto;
     padding: 35px 40px;
-    background: none;      /* removes blurred box */
-    border-radius: 0;
-    box-shadow: none;
-    backdrop-filter: none; /* removes glass blur */
+
+    /* Elegant translucent box */
+    background: rgba(0, 0, 0, 0.28);   /* very soft dark veil */
+    border: 1px solid rgba(255, 255, 255, 0.35);  /* elegant white border */
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);  /* subtle depth */
+    backdrop-filter: blur(4px);   /* light blur for readability */
+
     text-align: center;
 }
 
