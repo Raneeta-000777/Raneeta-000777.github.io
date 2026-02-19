@@ -55,18 +55,28 @@ h1 {
     margin: 0 auto 15px;
 }
 
-/* Profile picture */
 
-.profile-pic {
-    width: 400px !important;
-    height: 400px !important;
-    border-radius: 50% !important;
-    object-fit: cover !important;
-    display: block;
-    margin: 0 auto 25px auto;
+
+/* Rectangular profile picture box */
+.profile-box {
+    max-width: 650px;          /* same width as text boxes */
+    margin: 20px auto;
+    padding: 0;
+
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+
+    backdrop-filter: blur(6px);
 }
 
-
+/* Rectangle image inside */
+.profile-rect {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;       /* soft rounded corners */
+    display: block;
+}
 
 
 
